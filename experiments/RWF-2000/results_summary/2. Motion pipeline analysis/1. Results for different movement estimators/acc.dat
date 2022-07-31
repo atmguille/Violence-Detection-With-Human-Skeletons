@@ -1,0 +1,5 @@
+Optical Flow (flownet) & 79.25\% \\ 
+Optical Flow (farneback) & 80.50\% \\ 
+frame_diff & 83.75\% \\ 
+frame_dist & 81.75\% \\ 
+frame_diff_dist_combined & 81.25\% \\ 

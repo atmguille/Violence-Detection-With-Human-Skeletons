@@ -1,0 +1,7 @@
+SepConv & 89.25\% \\ 
+StandardConv & 88.75\% \\ 
+Custom CNN & 85.00\% \\ 
+EfficientNet & 86.50\% \\ 
+DepthConv x1 & 88.75\% \\ 
+DepthConv x3 & 87.75\% \\ 
+DepthConv x2 & 89.50\% \\ 

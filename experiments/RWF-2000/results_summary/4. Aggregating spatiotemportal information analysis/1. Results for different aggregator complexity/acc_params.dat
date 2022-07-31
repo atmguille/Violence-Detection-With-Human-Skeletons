@@ -1,0 +1,2 @@
+ConvLSTM 64 filters & 87.75\% & 183031 \\ 
+ConvLSTM 16 filters & 88.00\% & 22903 \\ 

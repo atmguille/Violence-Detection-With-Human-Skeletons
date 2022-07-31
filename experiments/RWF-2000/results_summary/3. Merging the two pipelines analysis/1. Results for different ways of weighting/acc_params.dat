@@ -1,0 +1,4 @@
+Add(batchnorm, tanh) & 87.00\% & 46921 \\ 
+Add(batchnorm, tanh)-OFLOW & 87.00\% & 46927 \\ 
+Multiply(relu, sigmoid) & 85.50\% & 46921 \\ 
+Multiply(relu, sigmoid)-OFLOW & 85.25\% & 46927 \\ 

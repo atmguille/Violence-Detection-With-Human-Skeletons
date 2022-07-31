@@ -1,0 +1,3 @@
+preConvLSTM 3 filters & 87.50\% \\ 
+preConvLSTM 15 filters & 87.75\% \\ 
+preConvLSTM 9 filters & 88.75\% \\ 
