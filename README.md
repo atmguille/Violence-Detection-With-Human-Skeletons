@@ -1,20 +1,32 @@
 # Human Skeletons and Motion Estimation for Efficient Violence Detection in Surveillance Videos
 
-This is the GitHub repository associated with the paper [Human Skeletons and Motion Estimation for Efficient Violence Detection in Surveillance Videos](), which achieves 90.25% accuracy in [RWF-2000](https://github.com/mchengny/RWF2000-Video-Database-for-Violence-Detection) with just 60k trainable parameters.
+This is the GitHub repository associated with the paper [Human Skeletons and Motion Estimation for Efficient Violence Detection in Surveillance Videos](), which achieves 90.25% accuracy in the RWF-2000 validation set with just 60k trainable parameters.
+
+<p align="center">
+  <img src="demo/architecture.png">
+</p>
 
 The purpose of this repository is to provide the code needed to replicate the results of the paper. Moreover, the training logs of all the experiments are also included.
 
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#demo">Demo</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#preprocessing">Preprocessing</a></li>
     <li><a href="#training">Training</a></li>
     <li><a href="#inference">Inference</a></li>
-    <li><a href="#demo">Demo</a></li>
     <li><a href="#citation">Citation</a></li>
   </ol>
 </details>
+
+## Demo
+
+![](demo/Will_Smith.gif)
+
+![](demo/murcia_fight.gif)
+
+To demonstrate the ability of our proposal to detect violence in real-life scenarios, we have executed our best model with two videos that are not present in any of the datasets. In the second video, a girl is brutally beaten outside of a bar in Murcia ([news report](https://www.laopiniondemurcia.es/murcia/2017/01/23/brutal-paliza-chica-centro-murcia-31944907.html)).
 
 ## Prerequisites
 
@@ -40,7 +52,7 @@ If you would like to train or validate a model, you will need one of the dataset
 
 ### OpenPose
 
-Apart from the data, one of the essential components of our proposal is the skeletons detector. As mentioned in the paper, we use OpenPose. Please, follow their [instalation guide](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/0_index.md) to extract the skeletons from the videos. A complementary installation guide is available at [this link](https://amir-yazdani.github.io/post/openpose/). 
+Apart from the data, one of the essential components of our proposal is the skeletons' detector. As mentioned in the paper, we use OpenPose. Please, follow their [instalation guide](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/0_index.md) to compile the library and be able to extract skeletons. A complementary installation guide is available at [this link](https://amir-yazdani.github.io/post/openpose/). 
 
 ## Preprocessing
 
@@ -58,19 +70,11 @@ Once you have trained a model, you can try to detect violence in a video of your
   <img src="demo/prediction_probability.png">
 </p>
 
-With this frames, you can render a video with the aggreagted predictions using [FFmpeg](https://ffmpeg.org/):
+With this frames, you can render a video with the aggreagted predictions using [FFmpeg](https://ffmpeg.org/), which can then be merged with the original video to obtain what is shown in the Demo. The command is:
     
 ```bash
 ffmpeg -i predictions/VIDEO_NAME-%d.png -r 10 output.mp4
 ```
-
-## Demo
-
-To demonstrate the ability of our proposal to detect violence in real-life scenarios, we have executed our best model with two videos that are not present in any of the datasets. The predictions are provided below. In the first video, a girl is brutally beaten outside of a bar in Murcia ([news report](https://www.laopiniondemurcia.es/murcia/2017/01/23/brutal-paliza-chica-centro-murcia-31944907.html)).
-
-![](demo/murcia_fight.gif)
-
-![](demo/Will_Smith.gif)
 
 ## Citation
 
