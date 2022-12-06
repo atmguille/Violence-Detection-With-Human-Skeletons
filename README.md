@@ -1,6 +1,6 @@
 # Human Skeletons and Motion Estimation for Efficient Violence Detection in Surveillance Videos
 
-This is the GitHub repository associated with the paper [Human Skeletons and Motion Estimation for Efficient Violence Detection in Surveillance Videos](), which achieves 90.25% accuracy in the RWF-2000 validation set with just 60k trainable parameters.
+This is the GitHub repository associated with the paper [Human Skeletons and Motion Estimation for Efficient Violence Detection in Surveillance Videos]() (currently under review by a Q1 journal), which achieves 90.25% accuracy in the RWF-2000 validation set with just 60k trainable parameters.
 
 <p align="center">
   <img src="demo/architecture.png">
@@ -26,7 +26,7 @@ The purpose of this repository is to provide the code needed to replicate the re
 
 ![](demo/murcia_fight.gif)
 
-To demonstrate the ability of our proposal to detect violence in real-life scenarios, we have executed our best model with two videos that are not present in any of the datasets. In the second video, a girl is brutally beaten outside of a bar in Murcia ([news report](https://www.laopiniondemurcia.es/murcia/2017/01/23/brutal-paliza-chica-centro-murcia-31944907.html)).
+To demonstrate the ability of our proposal to detect violence in real-life scenarios, we have executed our best model with two videos that are not present in any of the datasets. In the second video, a girl is brutally beaten outside of a bar in Murcia, a city in southern Spain ([news report](https://www.laopiniondemurcia.es/murcia/2017/01/23/brutal-paliza-chica-centro-murcia-31944907.html)).
 
 ## Prerequisites
 
