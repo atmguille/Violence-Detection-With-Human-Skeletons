@@ -1,6 +1,8 @@
-# Human Skeletons and Motion Estimation for Efficient Violence Detection in Surveillance Videos
+# Human Skeletons and Change Detection for Efficient Violence Detection in Surveillance Videos
 
-This is the GitHub repository associated with the paper [Human Skeletons and Motion Estimation for Efficient Violence Detection in Surveillance Videos]() (currently under review by a Q1 journal), which achieves 90.25% accuracy in the RWF-2000 validation set with just 60k trainable parameters.
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/human-skeletons-and-change-detection-for/activity-recognition-on-rwf-2000)](https://paperswithcode.com/sota/activity-recognition-on-rwf-2000?p=human-skeletons-and-change-detection-for)
+
+This is the GitHub repository associated with the paper [Human Skeletons and Change Detection for Efficient Violence Detection in Surveillance Videos](https://www.sciencedirect.com/science/article/pii/S1077314223001194), published in Computer Vision and Image Understanding (CVIU), vol. 233, 2023. The method achieves 90.25% accuracy in the RWF-2000 validation set with just 60k trainable parameters.
 
 <p align="center">
   <img src="demo/architecture.png">
@@ -81,5 +83,15 @@ ffmpeg -i predictions/VIDEO_NAME-%d.png -r 10 output.mp4
 Please cite our paper if this work helps your research:
 
 ```
-TODO: citation
+@article{GARCIACOBO2023SkeletonsViolence,
+  title = {Human skeletons and change detection for efficient violence detection in surveillance videos},
+  journal = {Computer Vision and Image Understanding},
+  volume = {233},
+  pages = {103739},
+  year = {2023},
+  issn = {1077-3142},
+  doi = {https://doi.org/10.1016/j.cviu.2023.103739},
+  url = {https://www.sciencedirect.com/science/article/pii/S1077314223001194},
+  author = {Guillermo Garcia-Cobo and Juan C. SanMiguel}
+}
 ```
