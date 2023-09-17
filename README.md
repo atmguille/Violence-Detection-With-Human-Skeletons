@@ -18,6 +18,7 @@ The purpose of this repository is to provide the code needed to replicate the re
     <li><a href="#preprocessing">Preprocessing</a></li>
     <li><a href="#training">Training</a></li>
     <li><a href="#inference">Inference</a></li>
+    <li><a href="#access-to-model-weights">Access to model weights</a></li>
     <li><a href="#citation">Citation</a></li>
   </ol>
 </details>
@@ -77,6 +78,10 @@ With this frames, you can render a video with the aggreagted predictions using [
 ```bash
 ffmpeg -i predictions/VIDEO_NAME-%d.png -r 10 output.mp4
 ```
+
+## Access to model weights
+
+The primary goal of this repository is to facilitate the replication of our research and provide tools to enhance and expand upon it. We are confident that the provided resources are sufficient for this purpose. Intentionally, we refrain from publishing the model weights to prevent any unauthorized commercial usage. If you believe that your research could benefit from accessing the model weights or if you wish to discuss potential commercial applications, kindly complete this [Form](https://docs.google.com/forms/d/1mK6DpStHeDJQk7zuTiHQfwAK_g0WyJsTaGNFyGHw0g4).
 
 ## Citation
 
